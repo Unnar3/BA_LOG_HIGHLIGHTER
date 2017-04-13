@@ -1,21 +1,21 @@
 {
-	"name": "LogFileHighlighter",
-	"displayName": "Log File Highlighter",
+	"name": "BANordicLogHighlighter",
+	"displayName": "BA NORDIC log highlighter",
 	"icon":"content/appicon.png",
 	"description": "Adds color highlighting to log files to make it easier to follow the flow of log events and identify problems.",
 	"categories": ["Other"],
-	"version": "1.1.1",
+	"version": "1.0.0",
 	"bugs": {
-		"url": "https://github.com/emilast/vscode-logfile-highlighter/issues"
+		"url": "git@github.com:Unnar3/BA_LOG_HIGHLIGHTER.git/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/emilast/vscode-logfile-highlighter.git"
+		"url": "git@github.com:Unnar3/BA_LOG_HIGHLIGHTER.git"
 	},
 	"engines": {
 		"vscode": "^1.0.0"
 	},
-	"publisher": "emilast",
+	"publisher": "unnar",
 	"contributes": {
 		"languages": [{
 			"id": "log",
