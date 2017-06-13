@@ -15,38 +15,46 @@
 
 		<key>patterns</key>
 		<array>
-		
 			<!-- DEBUG -->
 			<dict>
 				<key>match</key>
-				<string>\b(DEBUG)\b|(?i)\b(debug)\:</string>
+				<string>\b(DEBU.*)\b|(?i)\b(debu.*)\:</string>
 				<key>name</key>
-				<string>markup.changed</string>
-			</dict>
-
-			<!-- DEBUG -->
-			<dict>
-				<key>match</key>
-				<string>set\Kup</string>
-				<key>name</key>
-				<string>markup.changed</string>
+				<string>markup.deleted</string>
 			</dict>
 
 			<!-- WARN -->
 			<dict>
 				<key>match</key>
-				<string>\b(WARNING|WARN)\b|(?i)\b(warning)\:</string>
+				<string>\b(WARN.*)\b|(?i)\b(warn.*)\:</string>
 				<key>name</key>
-				<string>markup.deleted</string>
+				<string>meta.selector</string>
 			</dict>
 
 			<!-- ERROR -->
 			<dict>
 				<key>match</key>
-				<string>\b(ERROR|FAILURE|FAIL)\b|(?i)\b(error)\:</string>
+				<string>\b(ERRO.*)\b|(?i)\b(erro.*)\:</string>
 
 				<key>name</key>
 				<string>invalid</string>
+			</dict>
+
+			<!-- NOTE -->
+			<dict>
+				<key>match</key>
+				<string>\b(NOTE.*)\b|(?i)\b(note.*)\:</string>
+
+				<key>name</key>
+				<string>constant.language</string>
+			</dict>
+
+			<!-- Set Up -->
+			<dict>
+				<key>match</key>
+				<string>set\Kup</string>
+				<key>name</key>
+				<string>markup.changed</string>
 			</dict>
 
 			<!-- ARROW -->
@@ -61,7 +69,7 @@
 			<!-- TIMESTAMP -->
 			<dict>
 				<key>match</key>
-				<string>\[\d{8}\]</string>
+				<string>\[\d{10}\]</string>
 				<key>name</key>
 				<string>comment</string>
 			</dict>
